@@ -1,0 +1,341 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    height: 5%;
+}
+/* Navbar links */
+.navbar div a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.navbar div a{
+    background-color: lightgray;
+    border-radius: 10%;
+}
+.navbar a:hover {
+    background-color: #575757;
+}
+/* Big space for Text */
+.text-space {
+    flex: 1;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    background-color: lightgrey;
+    padding:10px 20px;
+    border-radius: 10%;
+}
+.banner{
+    width: 100%;
+}
+.banner-text
+{
+    margin: 5%;
+    font-size:20px;
+}
+.three-columns {
+    display: flex;
+    width: 100%;
+    background-color: orangered;
+}
+/* Left column with double width */
+.left-column {
+    flex: 2; /* Takes up twice the width */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5%;
+}
+/* Right columns with equal width */
+.right-column {
+    flex: 1;
+    background-color: rgb(239, 236, 236);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Styling for the buttons */
+.stacked-button {
+    width: 80%;
+    padding: 20px;
+    border: 2px solid blue;
+    color: blue;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0; /* Spacing between buttons */
+    font-family: "Zen Dots", sans-serif;
+    font-style: normal;
+    border-radius: 10%;
+    background-color: lightblue;
+    
+}
+/* Container for the equally spaced columns */
+.equal-columns {
+    display: flex;
+    width: 100%;
+    overflow: hidden; /* To keep rounded corners clean */
+    border-radius: 5%; /* Round edges for entire container */
+}
+/* Styling for each column */
+.column {
+    flex: 1; /* Each column takes equal width */
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: left;
+    border: 0.5px black solid;
+    border-radius: 5%;
+}
+
+
+/* Container for the 2x3 grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 equal-width columns */
+    grid-template-rows: 1fr 1fr 1fr; /* 3 equal-height rows */
+    gap: 0; /* No spacing between cells */
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+
+}
+/* Styling for each cell */
+.grid-item {
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue with transparency */
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #333;
+    margin:5px;
+    border-radius: 5%;
+    color:blue;
+}
+/* Container for stacked buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+}
+/* Styling for each button */
+.stacked-button2 {
+    width: 80%; /* Button width relative to container */
+    padding: 20px;
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue with transparency */
+    border: 1px solid blue;
+    color: #333;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Zen Dots", sans-serif;
+    font-style: normal;
+    border-radius: 5%;
+    color:blue;
+}
+
+.stacked-button3 {
+    width: 80%; /* Button width relative to container */
+    padding: 30px;
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue with transparency */
+    border: 1px solid blue;
+    color: #333;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Zen Dots", sans-serif;
+    font-style: normal;
+    border-radius: 5%;
+    color:blue;
+}
+
+/* Container for the entire layout */
+.container {
+    display: flex;
+    width: 100%;
+    height: 30%; /* Reduced height */
+    background-color: lightgray; /* Set background color to gray */
+    border-radius: 5%;
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Left column: 4 times the width of the right column */
+.left-side {
+    flex: 4; /* 4 times the width of the right column */
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 5%;
+    font-size: 18px;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Right column with 3 square-shaped rows */
+.right-side {
+    flex: 1; /* 1 part of the total width */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for stacking rows */
+    grid-template-rows: 1fr 1fr 1fr; /* 3 equal-height rows */
+    background-color: #e1f5fe;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+/* Styling for each square cell in the right column */
+.square-cell {
+    background-color: lightgray;
+    border: 1px solid #29b6f6;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between content */
+    align-items: center;
+}
+
+/* Add space between text and image */
+.square-cell .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.square-cell img {
+    max-width: 80%;
+    height: auto;
+    margin: 10px 0; /* Space between text and image */
+}
+
+/* Container for the two-column layout */
+.column-container {
+    display: flex;
+    width: 100%;
+    height: 50vh; /* Adjust as needed */
+}
+
+/* Left column */
+.first-column {
+    flex: 1; /* 1 part of the total width */
+    background-color: lightgrey;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    border-radius:2%;
+}
+
+/* Right column */
+.second-column {
+    flex: 2; /* 2 parts of the total width */
+    background-color: lightgrey;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    border-radius: 2%;
+}
+/* Container for the two-column layout */
+.container-xyz {
+    display: flex;
+    width: 100%;
+
+}
+
+/* Left column */
+.column-one {
+    flex: 1; /* 1 part of the total width */
+    background-color: lightgray;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    border-radius: 5%;
+}
+
+/* Right column with 2x2 grid */
+.column-two {
+    flex: 2; /* 2 parts of the total width */
+    background-color: gray;
+    font-size: 18px;
+    color: #333;
+    border-radius: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: 1fr 1fr; /* Two rows */
+    gap: 0; /* Remove space between grid items */
+}
+
+/* Grid items in the 2x2 layout with light gray background and black border */
+.grid-items {
+    background-color: lightgray; /* Light gray background */
+    border: 1px solid black; /* Black border */
+    font-size: 16px;
+    color: #333;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the two-column layout */
+.wild-container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+}
+
+/* Left column (3 times the size of right column) */
+.crazy-left-column {
+    flex: 3; /* 3 parts of the total width */
+    background-color: gray;
+    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5%;
+}
+
+/* Right column with 2x2 grid */
+.extreme-right-column {
+    flex: 1; /* 1 part of the total width */
+    background-color: #e1f5fe;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    border-radius: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: 1fr 1fr; /* Two rows */
+    gap: 20px; /* Space between grid items */
+}
+
+/* Grid items in the 2x2 layout with light gray background and black border */
+.wild-grid-item {
+    background-color: lightgray; /* Light gray background */
+    border: 1px solid black; /* Black border */
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
