@@ -1,0 +1,190 @@
+/* Basic styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    height: 5%;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+/* Navbar links */
+.navbar div a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar div a{
+    background-color: lightgray;
+    border-radius: 10%;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar a:hover {
+    background-color: #575757;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Big space for Text */
+.text-space {
+    flex: 1;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    background-color: lightgrey;
+    padding:10px 20px;
+    border-radius: 10%;
+}
+
+/* Container for the equally spaced columns */
+.equal-columns {
+    display: flex;
+    width: 100%;
+    overflow: hidden; /* To keep rounded corners clean */
+    border-radius: 5%; /* Round edges for entire container */
+}
+/* Styling for each column */
+.column {
+    flex: 1; /* Each column takes equal width */
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: left;
+    border: 0.5px black solid;
+    border-radius: 5%;
+}
+
+
+/* Container for the 2x3 grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 equal-width columns */
+    grid-template-rows: 1fr 1fr 1fr; /* 3 equal-height rows */
+    gap: 0; /* No spacing between cells */
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+/* Styling for each cell */
+.grid-item {
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue with transparency */
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #333;
+    margin:5px;
+    border-radius: 5%;
+    color:blue;
+}
+/* Container for stacked buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+}
+/* Styling for each button */
+.stacked-button2 {
+    width: 80%; /* Button width relative to container */
+    padding: 20px;
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue with transparency */
+    border: 1px solid blue;
+    color: #333;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Zen Dots", sans-serif;
+    font-style: normal;
+    border-radius: 5%;
+    color:blue;
+}
+
+.stacked-button3 {
+    width: 80%; /* Button width relative to container */
+    padding: 30px;
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue with transparency */
+    border: 1px solid blue;
+    color: #333;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Zen Dots", sans-serif;
+    font-style: normal;
+    border-radius: 5%;
+    color:blue;
+}
+
+/* Container for the entire layout */
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Left column, full height */
+.left-column {
+    flex: 1;
+    background-color: #d7ecf6;
+    padding: 20px;
+    border-radius: 10px 0 0 10px; /* Rounded left corners */
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+/* Right container with a 2x3 grid */
+.right-container {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 equal-width columns */
+    grid-template-rows: 1fr 1fr 1fr; /* 3 equal-height rows */
+    background-color: #e1f5fe;
+    border-radius: 0 10px 10px 0; /* Rounded right corners */
+    overflow: hidden;
+}
+/* Styling for each cell in the grid */
+.grid-item {
+    font-size: 10px;
+    color: #333;
+    background-color: #81d4fa;
+    border: 1px solid #29b6f6;
+    padding: 0; /* No padding to remove space */
+}
+/* Remove spacing between grid cells */
+.right-container,
+.grid-item {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0; /* Ensure no spacing */
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Container for the h1 and p elements */
